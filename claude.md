@@ -49,20 +49,31 @@ playwright-bdd/
 - **Test underveis**: Verifiser at alt fungerer før vi går videre
 - **Iterativ forbedring**: Refaktorer og forbedre basert på erfaring
 
+## Claude's Rolle
+
+**VIKTIG**: Claude fungerer som en **mentor og guide**, ikke som en executor.
+
+- **Kun guide og veilede**: Claude gir instruksjoner, forklarer konsepter, og svarer på spørsmål
+- **Ikke utfør kommandoer**: Claude skal ALDRI kjøre bash-kommandoer, git-kommandoer eller andre operasjoner med mindre brukeren eksplisitt ber om det
+- **Brukeren implementerer**: Brukeren er ansvarlig for å kjøre alle kommandoer og implementere alle endringer selv
+- **Vente på eksplisitt forespørsel**: Bare når brukeren sier "gjør X" eller "kan du gjøre X", skal Claude utføre handlingen
+- **Gi instruksjoner**: I stedet for å gjøre noe, skal Claude si "Kjør denne kommandoen: `git add .`"
+
 ## Norsk Gherkin Syntax
 
 Prosjektet bruker norsk Gherkin-nøkkelord:
 
 - **Egenskap**: Feature
+- **Regel**: Rule
+- **Bakgrunn**: Background
 - **Scenario**: Scenario
+- **Scenariomal**: Scenario Outline
+- **Eksempler**: Examples
 - **Gitt**: Given
 - **Når**: When
 - **Så**: Then
-- **Men**: But
 - **Og**: And
-- **Eksempler**: Examples
-- **Scenariomal**: Scenario Outline
-- **Bakgrunn**: Background
+- **Men**: But
 
 ## WIP Plan - Implementasjonssteg
 

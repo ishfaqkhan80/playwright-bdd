@@ -57,7 +57,7 @@ npm install -D prettier prettier-plugin-gherkin nodemon npm-run-all
 Alle feature-filer skal starte med `# language: nb` for norsk Gherkin-støtte.
 
 ### Nøkkelord mapping:
-- **Funksjonalitet** / Feature
+- **Egenskap** / Feature
 - **Regel** / Rule
 - **Bakgrunn** / Background
 - **Scenario** / Scenario
@@ -118,7 +118,7 @@ npx bddgen && npx playwright test
 
 ```gherkin
 # language: nb
-Funksjonalitet: Innlogging
+Egenskap: Innlogging
 
   Bakgrunn:
     Gitt at bruker er på innloggingsside
@@ -161,7 +161,7 @@ Og('velkomstmelding vises', async ({ page }) => {
 
 ```gherkin
 # language: nb
-Funksjonalitet: Feil innlogging
+Egenskap: Feil innlogging
 
   Scenario Mal: Feil innlogging
     Gitt brukeren er på innloggingsside
@@ -199,7 +199,7 @@ Så('skal feilmelding {string} vises', async ({ page }, melding: string) => {
 
 ```gherkin
 # language: nb
-Funksjonalitet: Innlogging med bakgrunn
+Egenskap: Innlogging med bakgrunn
 
   Bakgrunn:
     Gitt at brukeren starter på forsiden
