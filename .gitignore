@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Playwright
+.playwright/
+playwright-report/
+test-results/
+tests/.features-gen/
+
+# Reports
+reports/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
