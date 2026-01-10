@@ -1,0 +1,21 @@
+{
+  "name": "playwright-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishfaqkhan80/playwright-bdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ishfaqkhan80/playwright-bdd/issues"
+  },
+  "homepage": "https://github.com/ishfaqkhan80/playwright-bdd#readme"
+}
