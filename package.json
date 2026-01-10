@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/ishfaqkhan80/playwright-bdd/issues"
   },
-  "homepage": "https://github.com/ishfaqkhan80/playwright-bdd#readme"
+  "homepage": "https://github.com/ishfaqkhan80/playwright-bdd#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.6",
+    "playwright-bdd": "^8.4.2",
+    "typescript": "^5.9.3"
+  }
 }
