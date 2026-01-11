@@ -1,11 +1,11 @@
-import { defineConfig, devices } from '@playwright/test';
-import { defineBddConfig } from 'playwright-bdd';
+import { defineConfig, devices } from "@playwright/test";
+import { defineBddConfig } from "playwright-bdd";
 
 // Playwright-BDD konfigurasjon
 const testDir = defineBddConfig({
-  features: 'features/**/*.feature', // Hvor feature-filer ligger
-  steps: 'steps/**/*.ts', // Hvor step definitions ligger
-  language: 'nb', // Norsk Bokmål Gherkin
+  features: "features/**/*.feature", // Hvor feature-filer ligger
+  steps: "steps/**/*.ts", // Hvor step definitions ligger
+  language: "no", // Norsk Bokmål Gherkin
 });
 
 /**
@@ -19,7 +19,7 @@ export default defineConfig({
   // Timeouts
   timeout: 30000, // Maks 30s per test
   expect: {
-    timeout: 5000 // Maks 5s for assertions (await expect...)
+    timeout: 5000, // Maks 5s for assertions (await expect...)
   },
 
   // Kjøring
@@ -30,25 +30,25 @@ export default defineConfig({
 
   // Rapportering
   reporter: [
-    ['html', { outputFolder: 'reports/html', open: 'never' }], // Visuell HTML-rapport
-    ['json', { outputFile: 'reports/results.json' }], // Maskinlesbar JSON
-    ['list'] // Terminal output med live progress
+    ["html", { outputFolder: "reports/html", open: "never" }], // Visuell HTML-rapport
+    ["json", { outputFile: "reports/results.json" }], // Maskinlesbar JSON
+    ["list"], // Terminal output med live progress
   ],
 
   // Browser innstillinger
   use: {
-    baseURL: process.env.BASE_URL || 'http://localhost:3000', // Standard URL
-    trace: 'on-first-retry', // Detaljert trace kun ved første retry
-    screenshot: 'only-on-failure', // Screenshot kun ved failure
-    video: 'retain-on-failure', // Video kun ved failure
+    baseURL: process.env.BASE_URL || "http://localhost:3000", // Standard URL
+    trace: "on-first-retry", // Detaljert trace kun ved første retry
+    screenshot: "only-on-failure", // Screenshot kun ved failure
+    video: "retain-on-failure", // Video kun ved failure
     actionTimeout: 10000, // Maks 10s for actions (click, fill, etc.)
   },
 
   // Projects - KUN Chromium som spesifisert
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] }, // Realistisk Chrome viewport og user-agent
+      name: "chromium",
+      use: { ...devices["Desktop Chrome"] }, // Realistisk Chrome viewport og user-agent
     },
   ],
 });

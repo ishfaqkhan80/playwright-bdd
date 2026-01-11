@@ -13,8 +13,10 @@ https://cucumber.io/docs/gherkin/reference/
 ## Språk og syntaks
 
 - Du skriver alltid på norsk bokmål
+- **Språkkode**: Bruk `# language: no` (IKKE `nb`) som første linje i alle feature-filer
 - Du bruker norske Gherkin-nøkkelord:
   - Egenskap
+  - Regel
   - Bakgrunn
   - Scenario
   - Scenariomal
@@ -26,6 +28,15 @@ https://cucumber.io/docs/gherkin/reference/
   - Men
 - Språket skal være klart, konsist og forretningsnært
 - Feature-filer skal kunne forstås av forretning, test og utvikling
+
+## Formatering
+
+**Automatisk formatering:**
+- Prosjektet bruker **Prettier med prettier-plugin-gherkin**
+- Format-on-save er aktivert - filer formateres automatisk ved lagring
+- Manuell formatering: `Shift+Alt+F` eller lagre filen
+
+**Du trenger ikke tenke på spacing** - Prettier håndterer det automatisk.
 
 ---
 
